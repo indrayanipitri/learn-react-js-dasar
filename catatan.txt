@@ -1,0 +1,63 @@
+React -> merupakan sebuah library javascript
+
+by default react menyarankan kita menggunakan stateless component bukan statefull.. benefit nya kita bisa menggunakan hook. sedangkan kalai pakai class tidak bisa.
+
+ketika menggunakan class, ada function render yang didalamnya adalah kode js lalu menggunakan return.
+sedangkan untuk function tidak ada render, langsung memakai return
+
+download extension
+reactjs code snippets
+
+buat folder react 
+npx create-react-app namafolder
+
+ketika kita ingin memanage state di component kita sendiri, kita bisa menggunakan class bukan function
+
+kebanyakan class pasti memiliki constructor. dan ketika menggunakan react kita harus memasukan state di dalam constructor itu sendiri
+
+install axios :
+yarn add axios
+
+
+import React, { Component } from "react";
+import axios from "axios";
+
+class App extends Component {
+  constructor () {
+    super() 
+
+    // this.state = {
+    //   name : "Pipit"
+    // }
+
+    this.state = {
+      user : []
+    }
+  }
+
+    getUser = async () => {
+      let response = await axios.get('https://jsonplaceholder.typicode.com/users/1')
+      this.setState({
+        user: response.data
+      })
+    }
+
+    componentDidMount() {
+      this.getUser()
+    }
+
+  render() {
+    // const name = this.state.name
+    const user = this.state.user
+    //bisa juga pakai
+    //const {user} = this.state
+    return (
+      <>
+      <div>Nama Aku {user.name}</div>
+      <div>Username Aku {user.username}</div>
+      </>
+    )
+  }
+}
+
+export default App;
