@@ -29,4 +29,5 @@ stateless component => yang pakai function
 
 ketika kita menggunakan function, kita bisa menggunakan hook atau useState
 
+Reusable => dapat digunakan berulang-ulang
 
