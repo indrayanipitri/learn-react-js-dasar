@@ -18,46 +18,8 @@ kebanyakan class pasti memiliki constructor. dan ketika menggunakan react kita h
 install axios :
 yarn add axios
 
+install bootstrap 5:
+yarn add bootstrap@next popper.js
 
-import React, { Component } from "react";
-import axios from "axios";
-
-class App extends Component {
-  constructor () {
-    super() 
-
-    // this.state = {
-    //   name : "Pipit"
-    // }
-
-    this.state = {
-      user : []
-    }
-  }
-
-    getUser = async () => {
-      let response = await axios.get('https://jsonplaceholder.typicode.com/users/1')
-      this.setState({
-        user: response.data
-      })
-    }
-
-    componentDidMount() {
-      this.getUser()
-    }
-
-  render() {
-    // const name = this.state.name
-    const user = this.state.user
-    //bisa juga pakai
-    //const {user} = this.state
-    return (
-      <>
-      <div>Nama Aku {user.name}</div>
-      <div>Username Aku {user.username}</div>
-      </>
-    )
-  }
-}
-
-export default App;
+emmet buat card:
+.card>.card-header+.card-body
