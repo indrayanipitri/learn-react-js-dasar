@@ -56,6 +56,7 @@ class ClassExample extends Component {
                 <div className="card-footer">
                   My Name is {name ? name : '. . .'}
                 </div>
+                
               </div>
             </div>
           </div>
