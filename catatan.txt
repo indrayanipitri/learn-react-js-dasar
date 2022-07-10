@@ -21,5 +21,12 @@ yarn add axios
 install bootstrap 5:
 yarn add bootstrap@next popper.js
 
-emmet buat card:
-.card>.card-header+.card-body
+emmet buat tag html container row card dll :
+.container>.row>.col-md-4>.card>.card-header+.card-body
+
+statefull component => yang pakai class
+stateless component => yang pakai function
+
+ketika kita menggunakan function, kita bisa menggunakan hook atau useState
+
+
