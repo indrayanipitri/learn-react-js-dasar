@@ -32,3 +32,10 @@ ketika kita menggunakan function, kita bisa menggunakan hook atau useState
 Reusable => dapat digunakan berulang-ulang
 
 ketika menggunakan function kita tidak perlu lagi menggunakan didmounted didupdate dll. kita hanya perlu menggunakan fitur react yaitu useEffect, yaitu function yang kegunaanya sama aja kek didupdate didmounted dll.
+
+router -> ada react navigation ada juga react router
+
+install react router :
+yarn add react-router-dom
+
+Switch => ketika page sudah ditemukan, maka dia tidak akan mengkesekusi page lainnya.
