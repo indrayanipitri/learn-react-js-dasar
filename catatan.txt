@@ -31,3 +31,4 @@ ketika kita menggunakan function, kita bisa menggunakan hook atau useState
 
 Reusable => dapat digunakan berulang-ulang
 
+ketika menggunakan function kita tidak perlu lagi menggunakan didmounted didupdate dll. kita hanya perlu menggunakan fitur react yaitu useEffect, yaitu function yang kegunaanya sama aja kek didupdate didmounted dll.
