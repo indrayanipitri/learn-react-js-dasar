@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"
 
 function Navbar() {
     return (
+        <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className="container-fluid">
                 <a className="navbar-brand" to='#'>Navbar</a>
@@ -19,11 +20,14 @@ function Navbar() {
                     </li>
                     <li className="nav-item">
                     <NavLink className="nav-link" to="/contact">Contact</NavLink>
-                    </li>
+                    </li> 
                 </ul>
                 </div>
             </div>
         </nav>
+
+        </div>
+        
     )
 }
 
